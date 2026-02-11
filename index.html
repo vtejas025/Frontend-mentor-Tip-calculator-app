@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    
+    <h1>SPLI</h1>
+    <h1>TTER</h1>
+
+    <div class="card">
+      <form>
+
+        <div class="inside">
+
+          <label for="bill">Bill</label>
+          <div class="input">
+            <div class="dollar"></div>
+            <input type="text" id="bill" placeholder="0">
+          </div>
+
+          Select Tip %
+          <div class="radiobutton">
+
+            <label for="five" class="radio">
+              5%
+              <input type="radio" id="five" name="radio" value="5">
+            </label>
+            
+            <label for="ten" class="radio">
+              10%
+              <input type="radio" id="ten" name="radio" value="10">
+            </label>
+
+            <label for="fifteen" class="radio">
+              15%
+              <input type="radio" id="fifteen" name="radio" value="15">
+            </label>
+
+            <label for="twentyfive" class="radio">
+              25%
+              <input type="radio" id="twentyfive" name="radio" value="25">
+            </label>
+
+            <label for="fifty" class="radio">
+              50%
+              <input type="radio" id="fifty" name="radio" value="50">
+            </label>
+
+            <label for="custom" class="radio custom">
+              <input type="radio" id="custom" name="radio">
+              <input type="text" id="custominput" placeholder="Custom" tabindex="-1">
+            </label>
+          
+          </div>
+
+          <label for="number">Number of People</label>
+          <div class="input">
+            <div class="person"></div>
+            <input type="text" id="number" placeholder="0">
+          </div>
+
+        </div>  
+
+        <div class="final">
+
+          <div class="tip">
+            <span class="text">Tip Amount</span>
+            <span>/ person</span>
+          </div>
+
+          <div class="tipnumber">$0.00</div>
+
+          <div class="tip" id="second">
+            <span class="text">Total</span>
+            <span>/ person</span>
+          </div>
+
+          <div class="tipamount">$0.00</div>
+
+          <button type="reset" disabled>RESET</button>
+        </div>
+
+      </form>
+    </div>
+
+  </main>
+
+<script src="code.js"></script>
+</body>
+</html>
